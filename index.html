@@ -11,21 +11,36 @@
 </head>
 
 <body>
-    <h1>BMI Calculator</h1>
-    <h2>What is BMI?</h2>
-    <p>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.
-        use the tool below to compute yours.</p>
-    <h2>How to calculate?</h2>
-    <p>Enter your weight and height using metric measures. Select "Compute BMI" and your BMI will appear below.</p>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <div class="infoBox">
+            <h2>What is BMI?</h2>
+            <p>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and
+                women.
+                use the tool below to compute yours.</p>
+        </div>
+        <div class="infoBox">
+            <h2>How to calculate?</h2>
+            <p>Enter your weight and height using metric measures. Select "Compute BMI" and your BMI will appear below.
+            </p>
+        </div>
+        <div class="calculation">
+            <div class="heightForm">
+                <label for="height">Height:</label>
+                <input type="number" name="height" id="inHeight" placeholder="cm">
+            </div>
+            <div class="weightForm">
+                <label for="weight">Weight:</label>
+                <input type="number" name="weight" id="inWeight" placeholder="kg">
+            </div>
+            <input type="button" value="Compute BMI">
+        </div>
+
+    </div>
 
 
 
 
-    <label for="height">Height</label>
-    <input type="number" name="height" id="inHeight">
-    <label for="weight">Weight</label>
-    <input type="number" name="weight" id="inWeight">
-    <input type="button" value="Compute BMI">
 
 
     <script src="index.js"></script>
