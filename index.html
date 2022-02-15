@@ -24,17 +24,25 @@
             <p>Enter your weight and height using metric measures. Select "Compute BMI" and your BMI will appear below.
             </p>
         </div>
+        <div class="result" id="resultDiv">
+            <h2>Result:</h2>
+            <p>Your BMI : <span id="BMIresult">99(Overwight)</span> </p>
+
+        </div>
         <div class="calculation">
             <div class="heightForm">
-                <label for="height">Height:</label>
+                <label for="height">Height (cm):</label>
                 <input type="number" name="height" id="inHeight" placeholder="cm">
             </div>
             <div class="weightForm">
-                <label for="weight">Weight:</label>
+                <label for="weight">Weight (kg):</label>
                 <input type="number" name="weight" id="inWeight" placeholder="kg">
             </div>
-            <input type="button" value="Compute BMI">
+            <input type="button" value="Compute BMI" onclick="printBMI()">
+
+
         </div>
+
 
     </div>
 
